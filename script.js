@@ -15,3 +15,6 @@ function colorization(){
     colorADO = "rgb(" +red+ "," +green+ "," +blue+ ")";
     document.body.style.backgroundColor = colorADO;
 }
+
+OH_MY_GOD = document.getElementById("audioID");
+OH_MY_GOD.volume = 0.2;

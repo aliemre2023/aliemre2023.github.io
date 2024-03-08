@@ -5,12 +5,15 @@
         <meta charset="UTF-8">
 
         <link rel="icon" href="visuals/winx_rabbit.ico">
-
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="files/style.css">
       
     </head>
 
     <body>
+        <div id="header">
+            <div id="mainpage"><a href="index.html">Anasayfa</a></div>
+            <div id="resume"><a href="files/resume.html">Resume</a></div>
+        </div>
         <div id="page">
             <!--Information about me-->
             <div id="myPlace">
@@ -43,8 +46,8 @@
                 <button id="ButtonS" type="button" onclick="colorization()">background</button>
                 <button id="ButtonS" type="button" onclick="window.open('content/aliemrekayaResume.pdf')">resume</button>
             </div>
-
-            <div id="row1">
+            
+            <div id="row1">       
                 <h1 id="itsme" onmouseover="document.getElementById('ithink').style.background='#A0A0A0'"
                 onmouseout="document.getElementById('ithink').style=document.getElementById('ithink').style">IT'S ME</h1>
                 <p id="ithink">I THINK</p>
@@ -67,7 +70,7 @@
             <!--Pictures which I like-->
             <div id="row3">
                 <div id="galleryButtonDiv">
-                    <button id="galleryButton" type="button" onclick="window.location.href='visuals/galeria.html','_blank'">Gallery</button>
+                    <button id="galleryButton" type="button" onclick="window.location.href='files/galeria.html','_blank'">Gallery</button>
                 </div>
                 <img class="galeria" id="ada" src="visuals/galeria/Ada_Lovelace.png" alt="Ada_Lovelace">
                 <img class="galeria" src="visuals/galeria/capybara.jpg" alt="capybara">
@@ -89,6 +92,6 @@
         </div>
             
         
-        <script src="script.js"></script>
+        <script src="files/script.js"></script>
     </body>
 </html>

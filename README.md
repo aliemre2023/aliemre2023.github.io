@@ -4,8 +4,7 @@
 <p>Screenshot of my webpage</p>
 <p>Link to access: <a href="https://aliemre2023.github.io/" target="_blank">https://aliemre2023.github.io/</a></p>
 
-
-<img width="1440" alt="Screen Shot 2023-01-20 at 15 41 47" src="https://user-images.githubusercontent.com/93014021/213697424-80018ade-e92a-4da8-b6a9-02f47ec31a18.png">
+<img width="1440" alt="Screen Shot 2024-03-09 at 01 42 07" src="https://github.com/aliemre2023/aliemre2023.github.io/assets/93014021/7854f75c-dff7-4ad5-91ce-86705b473776">
 
 <!--
 <p>I grew the buisness 😎</p>

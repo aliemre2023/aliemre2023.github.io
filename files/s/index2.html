@@ -3,30 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sevgiliye Özel Köy Tanıtımı</title>
+    <title>BBBB</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <link rel="stylesheet" href="style2.css">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <div class="header">
-        <h2 id="header_text">Sevgiliye Özel Köy Tanıtımı</h2>
+        <img id="emoji1" src="images/06.png" class="clickable" onclick="imageChanger()"> 
+        <h2>hi</h2>
+        <img id="emoji2" class="clickable" src="images/91.png" onclick="imageChanger2()">
     </div>
     
     <div class="map" id="map"></div>
 
     <div class="photo">
         <div class="archive">
-            <p id="archive_text">Fotoğraf Arşivi</p>
+            <div id="allBtns"></div>
         </div>
-        <div>
-            <img class="gallery" src="photos/okaner.jpg" data-lat="36.99688" data-lng="30.78599">
-            <img class="gallery" src="photos/okaner.jpg" data-lat="34.0522" data-lng="-118.2437">
-            <img class="gallery" src="photos/okaner.jpg" data-lat="40.7128" data-lng="-74.0060">
-            <img class="gallery" src="photos/okaner.jpg" data-lat="51.5074" data-lng="-0.1278">
-            <img class="gallery" src="photos/okaner.jpg" data-lat="48.8566" data-lng="2.3522">
-            <img class="gallery" src="photos/okaner.jpg" data-lat="35.6895" data-lng="139.6917">
+        <div id="myDiv">
+            <div id="battle" class="photo_block">
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="41.7312" data-lng="49.9469" 
+                    data-text="Titanic: The famous British passenger liner that sank in 1912 after hitting an iceberg.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="40.2833" data-lng="-66.6167" 
+                    data-text="RMS Lusitania: A British ocean liner sunk by a German U-boat in 1915.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="27.2176" data-lng="33.8333" 
+                    data-text="SS Thistlegorm: A British armed Merchant Navy ship sunk in 1941 in the Red Sea.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="26.7000" data-lng="-78.8333" 
+                    data-text="HMS Conqueror: A British battleship that sank in the Bahamas in 1917.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="45.3667" data-lng="-73.9667" 
+                    data-text="Empress of Ireland: A Canadian ocean liner that sank in 1914 in the Saint Lawrence River.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="33.9526" data-lng="35.7595" 
+                    data-text="SS Andrea Doria: An Italian ocean liner that sank after a collision in 1956 near Nantucket, USA.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="59.5170" data-lng="21.1737" 
+                    data-text="MS Estonia: A ferry that sank in the Baltic Sea in 1994.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="15.3000" data-lng="144.6000" 
+                    data-text="USS Indianapolis: A US Navy ship torpedoed in 1945, leading to a massive loss of life.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="35.3420" data-lng="139.4667" 
+                    data-text="Mikasa: A Japanese battleship that sank in 1905 near Sasebo, Japan.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ergun/ergun.jpg" data-lat="42.3667" data-lng="-70.7500" 
+                    data-text="USS Quincy: A US Navy heavy cruiser sunk in 1942 during the Battle of Savo Island.">
+                    <button class="info-btn">i</button>
+                </div>
+            </div>
+            
+            <div id="submarine" class="photo_block">
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="47.6620" data-lng="-122.3377" 
+                    data-text="USS Nautilus: The world’s first operational nuclear-powered submarine.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="55.6761" data-lng="12.5683" 
+                    data-text="HMS E18: A British E-class submarine lost in the Baltic Sea during WWI.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="60.4720" data-lng="8.4689" 
+                    data-text="U-534: A German submarine raised from the seabed near Denmark.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="42.3581" data-lng="-71.0636" 
+                    data-text="USS Albacore: An experimental submarine preserved in Portsmouth, New Hampshire.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="51.5074" data-lng="-0.1278" 
+                    data-text="HMS Alliance: A British submarine now part of the Royal Navy Submarine Museum.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="34.0522" data-lng="-118.2437" 
+                    data-text="B-39: A Soviet-era submarine displayed at the Maritime Museum of San Diego.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="48.8566" data-lng="2.3522" 
+                    data-text="Argonaute (S636): A French submarine now a museum in Paris.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="40.748817" data-lng="-73.985428" 
+                    data-text="USS Growler: A U.S. Navy submarine now on display at the Intrepid Sea, Air & Space Museum in New York City.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="59.3293" data-lng="18.0686" 
+                    data-text="HSwMS Neptun: A Swedish submarine preserved at the Vasa Museum.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/selim/selim.jpg" data-lat="37.7749" data-lng="-122.4194" 
+                    data-text="USS Pampanito: A Balao-class submarine preserved as a museum ship in San Francisco.">
+                    <button class="info-btn">i</button>
+                </div>
+            </div>
+            
+            <div id="battle" class="photo_block">
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="49.6116" data-lng="6.1319" 
+                    data-text="Battle of the Bulge, 1944: The last major German offensive campaign on the Western Front during World War II.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="40.748817" data-lng="-73.985428" 
+                    data-text="Battle of New York, 1776: A major campaign in the American Revolutionary War.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="40.4168" data-lng="-3.7038" 
+                    data-text="Battle of Madrid, 1936-1939: A significant conflict during the Spanish Civil War.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="35.6895" data-lng="139.6917" 
+                    data-text="Battle of Okinawa, 1945: The largest amphibious assault in the Pacific Theater of World War II.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="48.8566" data-lng="2.3522" 
+                    data-text="Battle of Paris, 1814: A significant conflict during the Napoleonic Wars.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="40.7128" data-lng="-74.0060" 
+                    data-text="Battle of Long Island, 1776: One of the largest battles of the American Revolutionary War.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="41.9028" data-lng="12.4964" 
+                    data-text="Battle of Rome, 1944: An important series of battles during World War II.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="34.0522" data-lng="-118.2437" 
+                    data-text="Battle of Los Angeles, 1942: A rumored attack and subsequent anti-aircraft artillery barrage during World War II.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="40.4168" data-lng="-3.7038" 
+                    data-text="Battle of Madrid, 1936-1939: A significant conflict during the Spanish Civil War.">
+                    <button class="info-btn">i</button>
+                </div>
+            </div>
+
+            <div id="japanese" class="photo_block">
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="35.6852" data-lng="139.7528" 
+                    data-text="Meiji Restoration, 1868: The political revolution that ended the Tokugawa shogunate and restored imperial rule to Japan.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="35.6586" data-lng="139.7454" 
+                    data-text="Surrender of Japan, 1945: The official end of World War II for Japan with the signing of the surrender documents on USS Missouri.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="34.6937" data-lng="135.5023" 
+                    data-text="Sakai Incident, 1868: A significant diplomatic conflict between Japan and France during the early Meiji period.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="35.0116" data-lng="135.7681" 
+                    data-text="Battle of Sekigahara, 1600: A decisive battle that cleared the path to the Tokugawa shogunate.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="31.5966" data-lng="130.5571" 
+                    data-text="Satsuma Rebellion, 1877: The last and most serious samurai revolt against the new imperial government.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="35.6762" data-lng="139.6503" 
+                    data-text="Tokyo Air Raids, 1945: Extensive bombings by the US during World War II, causing massive destruction.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="32.7503" data-lng="129.8777" 
+                    data-text="Nagasaki Bombing, 1945: The second city hit by an atomic bomb, leading to Japan's surrender in World War II.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="34.3853" data-lng="132.4553" 
+                    data-text="Hiroshima Bombing, 1945: The first city to suffer an atomic bombing, marking a pivotal point in World War II.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="35.0116" data-lng="135.7681" 
+                    data-text="Heian Period, 794-1185: An era of significant cultural development, particularly in literature and art.">
+                    <button class="info-btn">i</button>
+                </div>
+                <div class="image-container">
+                    <img class="gallery" src="photos/ismail/ismail.jpg" data-lat="34.6937" data-lng="135.5023" 
+                    data-text="Osaka Castle Siege, 1615: The final battle of the Sengoku period that led to the establishment of the Tokugawa shogunate.">
+                    <button class="info-btn">i</button>
+                </div>
+            </div>
+            
         </div>
     </div>
 </body>
